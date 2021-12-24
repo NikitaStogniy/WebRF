@@ -3,6 +3,11 @@
     align-items: center;
  }
 
+ .video-js{
+     transform: translateY(-5rem);
+     z-index: -1;
+ }
+
  #lottie {
   margin: 0 auto;
   width: 50px;
@@ -91,10 +96,16 @@ h1{
     border: 1px solid #DBDBDB;
  }
 
- .third_section{
+ .third_section::after{
+    content: "";
+    position: absolute;
+    right: 0;
     background-image: url(./assets/last.png);
     background-position: right;
     background-size: contain;
+    width: 40%;
+    height: 100%;
+    z-index: -1;
     background-repeat: no-repeat;
  }
 .section{
@@ -140,40 +151,18 @@ h1{
 
  }
 
-
-
-#sqeuo_trigger:hover #square_first{
-
-    transform: translateX(-500px);
-    transition: 1s;
+.video-js .vjs-big-play-button{
+    top:43% !important;
+    left: 43% !important;
 }
-
-#sqeuo_trigger:hover #square_second{
-
-    transform: translateX(500px);
-    transition: 1s;
-}
-
-#sqeuo_trigger:hover #square_third{
-
-    transform: translateX(500px);
-    transition: 1s;
-}
-
-#sqeuo_trigger:hover #square_fourth{
-
-    transform: translateX(-500px);
-    transition: 1s;
-}
-
-#sqeuo_trigger:hover #square_fifth{
-
-    transform: translateX(800px);
-    transition: 1s;
-}
-
 
 @media screen and (max-width: 991px) {
+    .third_section::after{
+        width: 30%;
+    }
+    .video-js{
+        z-index: 0;
+    }
     #tooltip{
         margin-left: 0;
     }

@@ -37,13 +37,13 @@
     <div id="fullpage">
         <div class="section first_section">
             <div class="container">
-                <div class="row v-center translate-3">
+                <div class="row v-center justify-content-center translate-3">
                     <div class="col">
                         <h1>Сегодня ты<br>познакомишься<br>с нашей компанией</h1>
-                        <p class="mt-2">Ты сможешь пройти по самым интересным местам офиса и узнать о как устроина жизнь компании. На протяжении всего пути, с тобой будет помощник Улоф.</p>
+                        <p style="max-width: 400px;" class="mt-2">Ты сможешь пройти по самым интересным местам офиса и узнать о как устроена жизнь компании.На протяжении всего пути, с тобой будет помощник Улоф.</p>
                     </div>
                     <div class="col-md-5">
-                        <img width="100%" class="float-end" src="./assets/ulof.png">
+                        <img width="100%"  src="./assets/ulof.png">
                     </div>
                 </div>
                 <div class="row translate-3">
@@ -79,14 +79,14 @@
             </div>
             <div class="row align-items-center">
                 <div class="col d-flex justify-content-center">
-                    <video  style="border-radius: 10px; transform: translateY(-5rem); z-index: -1;" 
+                    <video  style="border-radius: 10px;" 
     id="my-video"
     class="video-js"
     controls
     preload="auto"
     width="750"
     height="350"
-    poster="./assets/Background.jpg"
+
     data-setup="{}"
   >
     <source src="assets/test.mp4" type="video/mp4" />
@@ -198,6 +198,40 @@
     anim = bodymovin.loadAnimation(animData);
 </script>
 <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+<script>
+    $( "#sqeuo_trigger" ).hover(
+        function(){
 
+            $( "#square_first" ).css("transform", "translateX(-500px)");
+            $( "#square_second" ).css("transform", "translateX(500px)");
+            $( "#square_third" ).css("transform", "translateX(500px)");
+            $( "#square_fourth" ).css("transform", "translateX(-500px)");
+            $( "#square_fifth" ).css("transform", "translateX(800px)");
+            $( "#my-video" ).css("z-index", "1");
+        }, function() {
+            $( "#square_first" ).css("transform", "translateX(0px)");
+            $( "#square_second" ).css("transform", "translateX(0px)");
+            $( "#square_third" ).css("transform", "translateX(0px)");
+            $( "#square_fourth" ).css("transform", "translateX(0px)");
+            $( "#square_fifth" ).css("transform", "translateX(0px)");
+        });
+    
+    $( ".video-js" ).hover(
+        function(){
+            $( "#square_first" ).css("transform", "translateX(-500px)");
+            $( "#square_second" ).css("transform", "translateX(500px)");
+            $( "#square_third" ).css("transform", "translateX(500px)");
+            $( "#square_fourth" ).css("transform", "translateX(-500px)");
+            $( "#square_fifth" ).css("transform", "translateX(800px)");
+    }, function() {
+            $( "#my-video" ).css("z-index", "-1");
+            $( "#square_first" ).css("transform", "translateX(0px)");
+            $( "#square_second" ).css("transform", "translateX(0px)");
+            $( "#square_third" ).css("transform", "translateX(0px)");
+            $( "#square_fourth" ).css("transform", "translateX(0px)");
+            $( "#square_fifth" ).css("transform", "translateX(0px)");
+        });
+     
+    </script>
 </body>
 </html>

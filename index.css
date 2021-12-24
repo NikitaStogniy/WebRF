@@ -1,0 +1,226 @@
+.v-center {
+    display: flex;
+    align-items: center;
+ }
+
+ #lottie {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
+body{
+    background: linear-gradient(180deg, #FFFFFF 0%, #EFF0F4 100%);
+    font-family: 'DIN Pro';
+}
+
+h1{
+    font-size: 3.5rem !important;
+}
+
+.translate-3{
+    transform: translateY(-3rem);
+}
+
+.translate-5{
+    transform: translateY(-5rem);
+}
+
+ .second_section::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-image: url('./assets/second_bg.svg');
+    background-size: contain;
+    height: 90%;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+
+ .second_section::after{
+    content: "";
+    z-index: 0;
+    position: absolute;
+    background-image: url('./assets/second_ulof.png');
+    background-size: contain;
+    height: 90%;
+    left: 0%;
+    width: 20%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center left;
+ }
+
+
+#tooltip{
+    display: inline-block;
+    padding: 1.5rem;
+    background: #F9F9F9;
+    box-shadow: -23px 23px 46px rgba(224, 224, 224, 0.2), 23px -23px 46px rgba(224, 224, 224, 0.2), -23px -23px 46px rgba(255, 255, 255, 0.9), 23px 23px 58px rgba(224, 224, 224, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 224, 224, 0.5);
+    border-radius: 16px;
+    margin-left: 15%;
+    max-width: 450px;
+    transform: translateY(-6.5rem);
+}
+
+
+
+ .w-70{
+     margin: auto;
+     width: 70%;
+ }
+
+ .form{
+    background: #FAFAFC;
+    box-shadow: -19px 19px 38px rgba(230, 230, 230, 0.2), 19px -19px 38px rgba(230, 230, 230, 0.2), -19px -19px 38px rgba(255, 255, 255, 0.9), 19px 19px 48px rgba(230, 230, 230, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+    border-radius: 24px;
+    padding: 42px 64px;
+ }
+
+ 
+
+ .form-group{
+     margin-bottom: 16px;
+ }
+ 
+ input{
+    border: 1px solid #DBDBDB;
+ }
+
+ .third_section{
+    background-image: url(./assets/last.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+.section{
+    overflow: hidden;
+}
+ .navbar{
+     z-index: 1;
+ }
+
+ .first_section{
+    background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
+ }
+
+ .square{
+    transition: 1s;
+    width: 396.45px;
+    height: 401.47px;
+    background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #F0F1F5;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -15.8302px -15.8302px 47.4907px #FFFFFF, 23.7454px 23.7454px 47.4907px rgba(174, 174, 192, 0.4);
+    border-radius: 63.321px;
+ }
+
+ .sqeuo_squares{
+     margin-top: -30%;
+     width: 100vw;
+    height: 100vh;
+    transform: rotate(-15deg);
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .sqeuo_row{
+     display: flex;
+     flex-direction: row;
+ }
+
+ .button{
+    background: #41566D;
+    border: none;
+    width: 150px;
+
+ }
+
+
+
+#sqeuo_trigger:hover #square_first{
+
+    transform: translateX(-500px);
+    transition: 1s;
+}
+
+#sqeuo_trigger:hover #square_second{
+
+    transform: translateX(500px);
+    transition: 1s;
+}
+
+#sqeuo_trigger:hover #square_third{
+
+    transform: translateX(500px);
+    transition: 1s;
+}
+
+#sqeuo_trigger:hover #square_fourth{
+
+    transform: translateX(-500px);
+    transition: 1s;
+}
+
+#sqeuo_trigger:hover #square_fifth{
+
+    transform: translateX(800px);
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 991px) {
+    #tooltip{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #sqeuo_trigger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form{
+        padding: 32px 16px;
+        margin: 0 1em;
+        margin-bottom: 5em;
+    }
+
+    .translate-3{
+        transform: none;
+    }
+
+    .translate-5{
+        transform: none;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    video{
+        width: 330px;
+        height: auto;
+    }
+
+    .third_section{
+        background: none;
+    }
+
+    .second_section::before{
+        background-image: url('./assets/second_bg-copy.svg');
+        width: 100%;
+        left: 0;
+    }
+
+    .colx{
+        width: 100%;
+    }
+    
+}

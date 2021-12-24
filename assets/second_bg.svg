@@ -1,0 +1,22 @@
+<svg width="1700" height="1064" viewBox="0 0 1700 1064" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="665.5" cy="23.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1269.5" cy="103.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1314.5" cy="183.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="974.5" cy="263.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1457.5" cy="747.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1354.5" cy="368.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1537.5" cy="844.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="1617.5" cy="948.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="974.5" cy="1050.5" r="11" stroke="#E9E9E9" stroke-width="3"/>
+<path d="M678 24H1690C1694.42 24 1698 27.5817 1698 32V1043C1698 1047.42 1694.42 1051 1690 1051H987M1362 360.5L1695.51 26.5M1618 936V112C1618 107.582 1614.42 104 1610 104H1280.5M1325 184H1530C1534.42 184 1538 187.582 1538 192V832M987 264H1450C1454.42 264 1458 267.582 1458 272V735" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="459.5" cy="1051.5" r="11" transform="rotate(-180 459.5 1051.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="408.5" cy="971.5" r="11" transform="rotate(-180 408.5 971.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="832.5" cy="891.5" r="11" transform="rotate(-180 832.5 891.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="735.5" cy="811.5" r="11" transform="rotate(-180 735.5 811.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="252.5" cy="327.5" r="11" transform="rotate(-180 252.5 327.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="307.5" cy="754.5" r="11" transform="rotate(-180 307.5 754.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="172.5" cy="230.5" r="11" transform="rotate(-180 172.5 230.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="92.5" cy="126.5" r="11" transform="rotate(-180 92.5 126.5)" stroke="#E9E9E9" stroke-width="3"/>
+<circle cx="12.5" cy="12.5" r="11" transform="rotate(-180 12.5 12.5)" stroke="#E9E9E9" stroke-width="3"/>
+<path d="M448 1051L20 1051C15.5817 1051 12 1047.42 12 1043L12.0001 23.9999M300 762.5L14.4933 1048.5M92.0001 139L92 963C92 967.418 95.5817 971 100 971L396 971M820 891L180 891C175.582 891 172 887.418 172 883L172 243M723 811L260 811C255.582 811 252 807.418 252 803L252 340" stroke="#E9E9E9" stroke-width="3"/>
+</svg>

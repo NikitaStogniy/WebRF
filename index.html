@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./assets/din_pro.css">
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <title>Веб РФ</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" alt="" height="50px" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Знакомство</a>
+                    <a class="nav-link" href="#">Интерактивный квест</a>
+                    <a class="nav-link" href="#">Связаться</a>
+                </div>
+          </div>
+        </div>
+      </nav>
+    <div id="fullpage">
+        <div class="section first_section">
+            <div class="container">
+                <div class="row v-center translate-3">
+                    <div class="col">
+                        <h1>Сегодня ты<br>познакомишься<br>с нашей компанией</h1>
+                        <p class="mt-2">Ты сможешь пройти по самым интересным местам офиса и узнать о как устроина жизнь компании. На протяжении всего пути, с тобой будет помощник Улоф.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img width="100%" class="float-end" src="./assets/ulof.png">
+                    </div>
+                </div>
+                <div class="row translate-3">
+                    <div class="col">
+                    <div id="lottie"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section second_section">
+            <div id="sqeuo_trigger" class="sqeuo_squares">
+                <div class="sqeuo_row">
+                    <div id="square_first" class="square"></div>
+                    <div id="square_second" style="margin-left: 100px;" class="square"></div>
+                </div>
+                <div class="sqeuo_row">
+                    
+                    <div id="square_third" style="margin-left: 900px;" class="square"></div>
+                </div>
+                <div class="sqeuo_row">
+                    <div id="square_fourth" class="square"></div>
+                    <div id="square_fifth" class="square"></div>
+                </div>
+                </div>
+            <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="tooltip" class="ml-1" role="tooltip">
+                        <b>В этом ролике</b> ты узнаешь о времени работы офиса. Какой дресс-код действует в компании. Как получить пропуск и куда обращаться если у тебя появятся вопросы.
+                        <div id="arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col d-flex justify-content-center">
+                    <video  style="border-radius: 10px; transform: translateY(-5rem); z-index: -1;" 
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="750"
+    height="350"
+    poster="./assets/Background.jpg"
+    data-setup="{}"
+  >
+    <source src="assets/test.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <div class="section third_section">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-5">
+                        <form class="form">
+                            <h3>Остались вопросы?</h3>
+                            <p>Напишите нам и мы свяжемся с вами для уточнения всех вопросов</p>
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя">
+                             </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Сообщение">
+                            </div>
+                            <button type="submit" class="btn btn-primary button">Отправить</button>
+                          </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col colx">
+                                    <h4>HR менеджер</h4>
+                                    <p>Царьков Иван Викторович</p>
+                                </div>
+                                <div class="col colx">
+                                    <h4>Мы в соцмедиа</h4>
+                                    <div><img src="./assets/Facebook-1.svg"><img src="./assets/Facebook-2.svg"><img src="./assets/Facebook-3.svg"><img src="./assets/Facebook.svg"><img src="./assets/cib_vk.svg"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col colx">
+                                    <h4>Телефон</h4>
+                                    <p>+7 (495) 604-63-63</p>
+                                </div>
+                                <div class="col colx">
+                                    <h4>E-mail</h4>
+                                    <p>info@pixsellz.io</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+<script>
+
+   $(document).ready(function() {
+	$('#fullpage').fullpage({
+
+	});
+});
+</script>  
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script>
+
+    //#fullpage > div.section.second_section.fp-section.fp-table.active.fp-completely::after
+    const popcorn = document.querySelector('.second_section::after');
+    const tooltip = document.querySelector('#tooltip');
+    Popper.createPopper(popcorn, tooltip, {
+        placement: 'right-start',
+        modifiers: [
+    {
+      name: 'offset',
+      options: {
+        offset: [0, 8],
+      },
+    },
+  ],
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+   var container = document.getElementById('lottie');
+    var animData = {
+        container: container,
+        renderer: 'svg',
+        loop: true,
+        prerender: false,
+        autoplay: true,
+        autoloadSegments: false,
+      path: 'https://assets8.lottiefiles.com/packages/lf20_tconfbpv.json'
+    };
+
+    var anim;
+
+    anim = bodymovin.loadAnimation(animData);
+</script>
+<script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+</body>
+</html>

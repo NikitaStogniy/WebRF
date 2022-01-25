@@ -19,7 +19,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/logo.svg" alt="" height="50px" class="d-inline-block align-text-top">
+                <img src="assets/logo.svg" alt="" height="30px" class="d-inline-block align-text-top">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,9 +27,9 @@
             
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Знакомство</a>
-                    <a class="nav-link" href="#">Интерактивный квест</a>
-                    <a class="nav-link" href="#">Связаться</a>
+                    <a class="nav-link active" aria-current="page" href="#top">Знакомство</a>
+                    <a class="nav-link" href="#quest">Интерактивный квест</a>
+                    <a class="nav-link" href="#contact">Связаться</a>
                 </div>
           </div>
         </div>
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="section second_section">
+        <div class="section second_section" id="second_section">
             <div id="sqeuo_trigger" class="sqeuo_squares">
                 <div class="sqeuo_row">
                     <div id="square_first" class="square"></div>
@@ -72,41 +72,21 @@
             <div class="row">
                 <div class="col">
                     <div id="tooltip" class="ml-1" role="tooltip">
-                        <b>В этом ролике</b> ты узнаешь о времени работы офиса. Какой дресс-код действует в компании. Как получить пропуск и куда обращаться если у тебя появятся вопросы.
+                        Пройдя квест, ты узнаешь о работе офиса, дресс-коде, получении пропуска и многом другом, что пригодится в первые дни на новой работе
                         <div id="arrow" data-popper-arrow></div>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col d-flex justify-content-center">
-                    <!--<video  style="border-radius: 10px;" 
-    id="my-video"
-    class="video-js"
-    controls
-    preload="auto"
-    width="750"
-    height="350"
-
-    data-setup="{}"
-  >
-    <source src="assets/test.mp4" type="video/mp4" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
-  </video>
--->
-<iframe style="width: 60vw; height: 50vh" class="video-js" id="my-video"
+                <div class="aspect-ratio">
+<iframe frameborder="0" width="550" height="275" class="video-js" id="my-video"
     src="https://video.eko.com/v/MZgROD/embed" 
-    
     title="That Moment When"
-    allowfullscreen 
+    allowfullscreen="true"
     allow="autoplay; fullscreen">
 </iframe>
-
+</div>
 
                 </div>
             </div>
@@ -115,7 +95,7 @@
     </div>
         <div class="section third_section">
             <div class="container">
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center" style="height: 80vh;">
                     <div class="col-md-5">
                         <form class="form">
                             <h3>Остались вопросы?</h3>
@@ -136,26 +116,33 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col colx">
-                                    <h4>HR менеджер</h4>
-                                    <p>Царьков Иван Викторович</p>
+
+                                    <h4>HR партнеры</h4>
+                                    <p>Андрей Платонов, тел. 81-77, PlatonovAY@veb.ru</p>
+                                    <p>Наталья Скребнева, тел. 53-20, SkrebnevaNV@veb.ru</p>
+                                    <p>Виктория Никольская,  тел. 57-04, NikolskayaVV@veb.ru</p>
+                                    <p>Ольга Фролова, тел. 69-35, FrolovaOY@veb.ru</p>
+                                    <p><b>Подбор и адаптация</b></p>
+<p>Анастасия Ладыгина, тел. 67-24, LadyginaAD@veb.ru</p>
+<p>Варвара Романенко, тел. 88-42, RomanenkoVA@veb.ru</p>
+
                                 </div>
                                 <div class="col colx">
                                     <h4>Мы в соцмедиа</h4>
                                     <div><img src="./assets/Facebook-1.svg"><img src="./assets/Facebook-2.svg"><img src="./assets/Facebook-3.svg"><img src="./assets/Facebook.svg"><img src="./assets/cib_vk.svg"></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col colx">
+                                    <br>
                                     <h4>Телефон</h4>
                                     <p>+7 (495) 604-63-63</p>
-                                </div>
-                                <div class="col colx">
                                     <h4>E-mail</h4>
                                     <p>info@pixsellz.io</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div><p style="width: 95%; text-align: center;">Разработано Блоком аналитики и маркетинга группы ВЭБ.РФ и Блоком по работе с персоналом и кадровой политики
+                    </p></div>
                 </div>
             </div>
         </div>
@@ -168,7 +155,7 @@
 
    $(document).ready(function() {
 	$('#fullpage').fullpage({
-
+        anchors: ['top', 'quest', 'contact']
 	});
 });
 </script>  
@@ -209,39 +196,27 @@
 </script>
 <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
 <script>
-    $( "#sqeuo_trigger" ).hover(
-        function(){
-
+    let active = setInterval(() =>
+checkActive(), 1000)
+function checkActive(){
+    if ($( "#second_section").hasClass( "active" )){
             $( "#square_first" ).css("transform", "translateX(-500px)");
             $( "#square_second" ).css("transform", "translateX(500px)");
             $( "#square_third" ).css("transform", "translateX(500px)");
             $( "#square_fourth" ).css("transform", "translateX(-500px)");
             $( "#square_fifth" ).css("transform", "translateX(800px)");
             $( "#my-video" ).css("z-index", "1");
-        }, function() {
-            $( "#square_first" ).css("transform", "translateX(0px)");
-            $( "#square_second" ).css("transform", "translateX(0px)");
-            $( "#square_third" ).css("transform", "translateX(0px)");
-            $( "#square_fourth" ).css("transform", "translateX(0px)");
-            $( "#square_fifth" ).css("transform", "translateX(0px)");
-        });
-    
-    $( ".video-js" ).hover(
-        function(){
-            $( "#square_first" ).css("transform", "translateX(-500px)");
-            $( "#square_second" ).css("transform", "translateX(500px)");
-            $( "#square_third" ).css("transform", "translateX(500px)");
-            $( "#square_fourth" ).css("transform", "translateX(-500px)");
-            $( "#square_fifth" ).css("transform", "translateX(800px)");
-    }, function() {
+        
+        }
+        else{
             $( "#my-video" ).css("z-index", "-1");
             $( "#square_first" ).css("transform", "translateX(0px)");
             $( "#square_second" ).css("transform", "translateX(0px)");
             $( "#square_third" ).css("transform", "translateX(0px)");
             $( "#square_fourth" ).css("transform", "translateX(0px)");
             $( "#square_fifth" ).css("transform", "translateX(0px)");
-        });
-     
+        }
+    }
     </script>
 </body>
 </html>

@@ -3,6 +3,26 @@
     align-items: center;
  }
 
+ .aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    transform: translateY(6.5rem);
+    padding-bottom: 56%; /* The height of the item will now be 56% of the width. */
+  }
+
+  /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+  .aspect-ratio iframe {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
  .video-js{
      transform: translateY(-5rem);
      z-index: -1;
@@ -31,6 +51,7 @@ h1{
 .translate-5{
     transform: translateY(-5rem);
 }
+
 
  .second_section::before{
     content: "";
@@ -69,7 +90,8 @@ h1{
     border-radius: 16px;
     margin-left: 15%;
     max-width: 450px;
-    transform: translateY(-6.5rem);
+
+    transform: translateY(-1.5rem);
 }
 
 

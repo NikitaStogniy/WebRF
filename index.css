@@ -201,10 +201,22 @@ h1{
 }
 
 @media screen and (max-width: 600px) {
+    .hide_on_mob{
+      
+    }
+    .partners p{
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .aspect-ratio iframe{
+        width: 100% !important;
+        height: 100% !important;
+    }
     .form{
         padding: 32px 16px;
         margin: 0 1em;
-        margin-bottom: 5em;
+        margin-top: -4em;
+        margin-bottom: 1em;
     }
 
     .translate-3{

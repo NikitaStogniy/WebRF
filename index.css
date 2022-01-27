@@ -3,6 +3,10 @@
     align-items: center;
  }
 
+a{
+    text-decoration: none;
+}
+
  .aspect-ratio {
     position: relative;
     width: 100%;

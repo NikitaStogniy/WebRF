@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/din_pro.css">
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 
+
     <title>Веб РФ</title>
   </head>
   <body>
@@ -97,20 +98,21 @@
             <div class="container">
                 <div class="row d-flex justify-content-center" style="height: 80vh;">
                     <div class="col-md-5">
-                        <form class="form">
+                        <form action="./assets/mail.php" method="POST" class="form">
                             <h3>Остались вопросы?</h3>
                             <p>Напишите нам и мы свяжемся с вами для уточнения всех вопросов</p>
                             <div class="form-group">
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя">
+                              <input name="name" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя">
                              </div>
                             <div class="form-group">
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                              <input name="email" type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Сообщение">
+                                <input name="message" type="password" class="form-control" id="exampleInputPassword1" placeholder="Сообщение">
                             </div>
                             <button type="submit" class="btn btn-primary button">Отправить</button>
                           </form>
+                          
                     </div>
                     <div class="col-md-5">
                         <div class="container">
@@ -129,7 +131,23 @@
                                 </div>
                                 <div class="col colx">
                                     <h4>Мы в соцмедиа</h4>
-                                    <div><img src="./assets/Facebook-1.svg"><img src="./assets/Facebook-2.svg"><img src="./assets/Facebook-3.svg"><img src="./assets/Facebook.svg"><img src="./assets/cib_vk.svg"></div>
+                                    <div>
+                                        <a href="https://www.instagram.com/vebrf/">
+                                            <img src="./assets/Facebook-1.svg">
+                                        </a>
+                                        <a href="https://twitter.com/vebrf">
+                                        <img src="./assets/Facebook-2.svg">
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCvM3B_pKZX88k-_UJmXClrw">
+                                        <img src="./assets/Facebook-3.svg">
+                                        </a>
+                                        <a href="https://www.facebook.com/vebrf">
+                                        <img src="./assets/Facebook.svg">
+                                        </a>
+                                        <a href="https://vk.com/vebrf">
+                                        <img src="./assets/cib_vk.svg">
+                                        </a>
+                                    </div>
                                     <br>
                                     <h4>Телефон</h4>
                                     <p>+7 (495) 604-63-63</p>
@@ -141,7 +159,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div><p style="width: 95%; text-align: center;">Разработано Блоком аналитики и маркетинга группы ВЭБ.РФ и Блоком по работе с персоналом и кадровой политики
+                    <div><p style="width: 95%; text-align: center;">Разработано Блоком аналитики и маркетинга группы <a href="https://вэб.рф">ВЭБ.РФ</a> и Блоком по работе с персоналом и кадровой политики
                     </p></div>
                 </div>
             </div>

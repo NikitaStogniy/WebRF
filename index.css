@@ -3,6 +3,10 @@
     align-items: center;
  }
 
+.partners p {
+    margin-bottom: 4px;
+}
+
 a{
     text-decoration: none;
 }
@@ -201,8 +205,14 @@ h1{
 }
 
 @media screen and (max-width: 600px) {
-    .hide_on_mob{
+    .mob-hide{
+      display: none;
       
+    }
+    .partners{
+        margin-bottom: 3vh;
+        display: flex;
+        justify-content: space-between;
     }
     .partners p{
         margin-bottom: 2px;

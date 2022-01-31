@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -44,7 +45,7 @@
                         <p style="max-width: 420px;" class="mt-2">Добро пожаловать в команду <a href="http://xn--90ab5f.xn--p1ai/">ВЭБ.РФ!</a> Меня зовут Майя, я помогу тебе освоиться в нашем офисе и расскажу, как устроена жизнь в организации. Тебя ждет увлекательный квест! Не терпится начать? Листай вниз и жми на Play</p>
                     </div>
                     <div class="col-md-5">
-                        <img width="100%"  src="./assets/ulof.png">
+                        <img width="100%" class="first_image" src="./assets/ulof.png">
                     </div>
                 </div>
                 <div class="row translate-3">
@@ -94,9 +95,9 @@
             
         </div>
     </div>
-        <div class="section third_section">
-            <div class="container">
-                <div class="row d-flex justify-content-center" style="height: 74vh;">
+        <div class="section third_section" id="third">
+            <div class="container" style="padding-top: 2em;">
+                <div class="row d-flex justify-content-center">
                     <div class="col-md-5">
                         <form action="./assets/mail.php" method="POST" class="form">
                             <h3>Остались вопросы?</h3>
@@ -178,7 +179,9 @@
 
    $(document).ready(function() {
 	$('#fullpage').fullpage({
-        anchors: ['top', 'quest', 'contact']
+        anchors: ['top', 'quest', 'contact'],
+        scrollOverflow: true,
+  normalScrollElements: '.third'
 	});
 });
 </script>  

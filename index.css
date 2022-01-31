@@ -141,6 +141,8 @@ h1{
 }
  .navbar{
      z-index: 1;
+     width: 100%;
+     position: fixed;
  }
 
  .first_section{
@@ -179,9 +181,19 @@ h1{
 
  }
 
+ .container-fluid{
+    padding-top: 9em;
+    height: 100vh;
+ }
+
 .video-js .vjs-big-play-button{
     top:43% !important;
     left: 43% !important;
+}
+
+.hide_on_mob{
+    align-content: end;
+    height: 34vh;
 }
 
 @media screen and (max-width: 991px) {
@@ -203,9 +215,25 @@ h1{
 }
 
 @media screen and (max-width: 600px) {
+   .first_image{
+       width: 50%;
+       margin-left: 25%;
+   }
     .mob-hide{
       display: none;
       
+    }
+
+    .hide_on_mob{
+        height: auto;
+    }
+
+    .container-fluid{
+        padding-top: 0em;
+    }
+
+    #third{
+        overflow-y: scroll;
     }
     .partners{
         margin-bottom: 3vh;
@@ -223,7 +251,6 @@ h1{
     .form{
         padding: 32px 16px;
         margin: 0 1em;
-        margin-top: -4em;
         margin-bottom: 1em;
     }
 

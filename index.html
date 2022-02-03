@@ -242,5 +242,18 @@ function checkActive(){
         }
     }
     </script>
+
+    <script>
+        function menu (){
+            if ($("#navbarSupportedContent").css("display")  == "none"){
+                $("#navbarSupportedContent").css("display", "block"); 
+            }
+            else{
+                $("#navbarSupportedContent").css("display", "none"); 
+            }
+           
+        }
+        $( "button" ).on( "click", menu );
+    </script>
 </body>
 </html>

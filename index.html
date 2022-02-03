@@ -186,6 +186,12 @@
 	});
 });
 </script>  
+<script>
+    if (($(window).width() / $(window).height()) > 1.9){
+        $('.aspect-ratio iframe').css('height', '40%')
+        $('.aspect-ratio iframe').css('width', '40%')
+    }
+</script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script>
 

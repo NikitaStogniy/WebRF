@@ -231,10 +231,7 @@ h1{
     .container-fluid{
         padding-top: 5em;
     }
-
-    #third{
-        overflow-y: scroll;
-    }
+    
     .partners{
         margin-bottom: 3vh;
         display: flex;

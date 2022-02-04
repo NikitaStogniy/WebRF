@@ -3,6 +3,13 @@
     align-items: center;
  }
 
+ .smallFont{
+    width: 95%;
+    margin-top: 30vh;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 
 .partners p {
     margin-bottom: 4px;
@@ -211,7 +218,21 @@ h1{
     }
 }
 
+.hide_on_desctop{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
+
+    .hide_on_desctop{
+        display: block;
+    }
+
+    .smallFont{
+        margin-top: 0;
+        font-size: 11px !important;
+    }
+
    .first_image{
        width: 50%;
        margin-left: 25%;
@@ -222,7 +243,7 @@ h1{
     }
 
     .hide_on_mob{
-        height: auto;
+        display: none;
     }
 
     .container-fluid{
@@ -243,7 +264,7 @@ h1{
         height: 100% !important;
     }
     .form{
-        padding: 32px 16px;
+        padding: 16px 16px;
         margin: 0 1em;
         margin-bottom: 1em;
     }

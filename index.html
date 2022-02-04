@@ -95,7 +95,7 @@
     </div>
         <div class="section third_section">
             
-            <div class="container" style="margin-top: 2em; padding-bottom: 4em;">
+            <div class="container" style="padding-bottom: 4em;">
                 <div class="content-wrapper">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-5">
@@ -130,9 +130,28 @@
                                         <p><b>Подбор и адаптация</b></p>
                                         <p><a href="mailto:LadyginaAD@veb.ru">Анастасия Ладыгина</a>,<br> тел. 67-24</p>
                                         <p><a href="mailto:RomanenkoVA@veb.ru">Варвара Романенко</a>,<br> тел. 88-42</p>
+                                        <div class="hide_on_desctop">
+                                            <h4 class="mt-3">Мы в соцмедиа</h4>
+                                            <a href="https://www.instagram.com/vebrf/">
+                                                <img src="./assets/Facebook-1.svg">
+                                            </a>
+                                            <a href="https://twitter.com/vebrf">
+                                            <img src="./assets/Facebook-2.svg">
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UCvM3B_pKZX88k-_UJmXClrw">
+                                            <img src="./assets/Facebook-3.svg">
+                                            </a>
+                                            <a href="https://www.facebook.com/vebrf">
+                                            <img src="./assets/Facebook.svg">
+                                            </a>
+                                            <a href="https://vk.com/vebrf">
+                                            <img src="./assets/cib_vk.svg">
+                                            </a>
+                                        </div>
                                     </div>
+
                                 </div>
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-sm-12 col-md-6 hide_on_mob">
                                     <h4>Мы в соцмедиа</h4>
                                     <div>
                                         <a href="https://www.instagram.com/vebrf/">
@@ -163,8 +182,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row hide_on_mob">
-                    <div class="col"><p style="width: 95%; text-align: center; margin-bottom: 1em;">Разработано Блоком аналитики и маркетинга группы <a href="https://вэб.рф">ВЭБ.РФ</a> и Блоком по работе с персоналом и кадровой политике
+                <div class="row ">
+                    <div class="col smallFont"><p>Разработано Блоком аналитики и маркетинга группы <a href="https://вэб.рф">ВЭБ.РФ</a> и Блоком по работе с персоналом и кадровой политике
                     </p></div>
                 </div>
             </div>
@@ -180,7 +199,6 @@
    $(document).ready(function() {
 	$('#fullpage').fullpage({
         anchors: ['top', 'quest', 'contact'],
-        responsiveWidth: 600
     //    scrollOverflow: true,
     //    normalScrollElements: '.content-wrapper'
 	});
